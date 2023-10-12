@@ -26,7 +26,7 @@ const About = () => (
               marginBottom: '40px', // Adicione essa linha para afastar o elemento do AppSideBar
             }}
           >
-            Boas vindas ao AIComputeTutor!
+            About
 
             <Divider style={{ width: '100%', height: '0.05px', backgroundColor: '#E8E6E6' }} />
             
