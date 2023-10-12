@@ -39,15 +39,19 @@ export default function SwipeableTemporaryDrawer() {
           { text: 'About', icon: <InfoIcon />, route: '/about' },
         ].map((item, index) => (
           <ListItem key={item.text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                <Link to={item.route}>{item.icon}</Link>
-              </ListItemIcon>
-              <ListItemText primary={
-                <Link to={item.route}>{item.text}</Link>
-              } />
-            </ListItemButton>
-          </ListItem>
+          <ListItemButton>
+            <ListItemIcon>
+              <Link to={item.route} style={{ textDecoration: 'none', color: 'inherit' }}>
+                {item.icon}
+              </Link>
+            </ListItemIcon>
+            <ListItemText primary={
+              <Link to={item.route} style={{ textDecoration: 'none', color: 'inherit' }}>
+                {item.text}
+              </Link>
+            } />
+          </ListItemButton>
+        </ListItem>
         ))}
       </List>
     </Box>

@@ -10,11 +10,11 @@ import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 const About = () => (
   <>
     <h1>About</h1>
-    <Grid container spacing={4}>
-      <Grid item xs={12} sm={3}>
+    <Grid container spacing={2}>
+      <Grid item xs={10} sm={3}>
         <AppSideBar />
       </Grid>
-      <Grid item xs={14} sm={17}>
+      <Grid item xs={10} sm={15}>
         <div style={{ paddingLeft: '20px' }}>
           <Typography
             variant="h4"
@@ -27,7 +27,11 @@ const About = () => (
             }}
           >
             Boas vindas ao AIComputeTutor!
+
+            <Divider style={{ width: '100%', height: '0.05px', backgroundColor: '#E8E6E6' }} />
+            
           </Typography>
+          
        
           
         </div>
