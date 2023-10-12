@@ -14,6 +14,8 @@ import Checkbox from '@mui/material/Checkbox';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
+import { Button } from '@mui/material';
+import { Add } from '@mui/icons-material';
 
 const Disciplinas = () => {
   const [expanded, setExpanded] = useState('');
@@ -24,35 +26,18 @@ const Disciplinas = () => {
 
   return (
     <>
-      <h1>Disciplinas</h1>
-      <Grid container spacing={2}>
-        <Grid item xs={10} sm={3}>
-          <AppSideBar />
-        </Grid>
-        <Grid item xs={10} sm={9}>
-          <div style={{ paddingLeft: '20px' }}>
-            <Typography
-              variant="h4"
-              component="div"
-              style={{
-                color: '#2E8BE8',
-                fontSize: 20,
-                fontWeight: 'bold',
-                marginBottom: '40px',
-              }}
-            >
-              DISCIPLINAS 
-            </Typography>
-            <Divider
-              style={{
-                width: '100%',
-                height: '0.05px',
-                backgroundColor: '#E8E6E6',
-                marginBottom: '20px',
-              }}
-            />
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+      <Grid container spacing={1}>
+      <Grid item xs={5} sm={3} style={{ marginRight: '1px' }}>
+        <AppSideBar />
+      </Grid>
+      <Grid item xs={5} sm={9}>
 
 
+       
+    <div style={{ paddingLeft: '50px', marginTop: '-10vh' }}>
+    <Grid item xs={12} sm={9} style={{ maxWidth: 'calc(100% - 240px)' }}>
+  
             <Accordion
               expanded={expanded === 'primeiro período'}
               onChange={handleChange('primeiro período')}
@@ -556,9 +541,6 @@ const Disciplinas = () => {
                 </TableContainer>
               </AccordionDetails>
             </Accordion>
-            
-
-            {/* Nomes de Carros */}
             <Accordion
               expanded={expanded === 'optgerais'}
               onChange={handleChange('optgerais')}
@@ -722,10 +704,19 @@ const Disciplinas = () => {
                   </Table>
                 </TableContainer>
               </AccordionDetails>
+
+        
             </Accordion>
-          </div>
+                  </Grid>
+
+          
+            </div>
+     
         </Grid>
       </Grid>
+
+      <Button>Medium</Button>
+      </div>
     </>
   );
 };

@@ -1,9 +1,7 @@
-import React from 'react';
 import AppSideBar from '../../Geral/AppSideBar';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-import Divider from '@mui/material/Divider';
 import Grid from '@mui/material/Grid';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import { Button } from '@mui/material';
